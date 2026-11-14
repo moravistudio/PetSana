@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetSana — Veterinaria para perros y gatos</title>
+  <meta name="description" content="Atención veterinaria para perros y gatos, con equipo de confianza. Agenda en línea y te esperamos.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B7F8C'/%3E%3Cg fill='white'%3E%3Cellipse cx='32' cy='41' rx='11' ry='9'/%3E%3Ccircle cx='17' cy='28' r='5'/%3E%3Ccircle cx='27' cy='19' r='5'/%3E%3Ccircle cx='37' cy='19' r='5'/%3E%3Ccircle cx='47' cy='28' r='5'/%3E%3C/g%3E%3C/svg%3E">
+  <meta property="og:title" content="PetSana — Veterinaria para perros y gatos">
+  <meta property="og:description" content="Cuidamos a quienes más quieres. Consulta, vacunación, baño y peluquería, y planes de cuidado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ MENÚ ============ -->
+  <header class="nav" id="inicio">
+    <div class="wrap nav__in">
+      <a href="#inicio" class="logo" aria-label="PetSana, inicio">PetSana</a>
+      <nav class="nav__links" id="menu" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#planes">Planes</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#cita" class="nav__cta nav__cta--movil">Agendar cita</a>
+      </nav>
+      <div class="nav__der">
+        <a href="tel:+51900000000" class="nav__urg">Emergencias 24 h</a>
+        <a href="#cita" class="btn btn--teal btn--sm nav__cta--pc">Agendar cita</a>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ PORTADA ============ -->
+    <section class="wrap hero-wrap">
+      <div class="hero">
+        <div class="hero__circulo" aria-hidden="true"></div>
+        <div class="hero__txt">
+          <span class="pill">Atención con cariño</span>
+          <h1>Cuidamos a quienes más quieres</h1>
+          <p>Atención veterinaria para perros y gatos, con equipo de confianza. Agenda en línea y te esperamos.</p>
+          <div class="hero__btns">
+            <a href="#cita" class="btn btn--blanco">Agendar cita</a>
+            <a href="#servicios" class="btn btn--borde">Ver servicios</a>
+          </div>
+        </div>
+        <img class="hero__img" src="img/hero.webp" width="1100" height="733" alt="Veterinaria sonriente abrazando a un golden retriever">
+      </div>
+    </section>
+
+    <!-- ============ SERVICIOS ============ -->
+    <section class="wrap seccion" id="servicios">
+      <div class="seccion__cab">
+        <div>
+          <h2>Nuestros servicios</h2>
+          <p class="sub">Todo lo que tu mascota necesita, en un solo lugar.</p>
+        </div>
+        <a href="#cita" class="btn btn--negro btn--sm">Ver todos</a>
+      </div>
+      <div class="servicios">
+        <article class="serv reveal">
+          <div class="serv__foto"><img src="img/servicio-consulta.webp" width="640" height="720" loading="lazy" alt="Veterinario revisando el oído de un labrador"></div>
+          <h3>Consulta general</h3>
+          <p>Revisión completa y orientación para su cuidado diario.</p>
+          <a href="#cita" class="mas">Conocer más</a>
+        </article>
+        <article class="serv reveal">
+          <div class="serv__foto"><img src="img/servicio-vacunacion.webp" width="640" height="720" loading="lazy" alt="Veterinaria vacunando a un gato atigrado"></div>
+          <h3>Vacunación</h3>
+          <p>Calendario de vacunas al día, desde cachorros.</p>
+          <a href="#cita" class="mas">Conocer más</a>
+        </article>
+        <article class="serv reveal">
+          <div class="serv__foto"><img src="img/servicio-bano.webp" width="640" height="720" loading="lazy" alt="Perrito rizado recibiendo su baño"></div>
+          <h3>Baño y peluquería</h3>
+          <p>Higiene y estilo con productos suaves para su piel.</p>
+          <a href="#cita" class="mas">Conocer más</a>
+        </article>
+        <article class="serv reveal">
+          <div class="serv__foto"><img src="img/servicio-cachorros.webp" width="640" height="720" loading="lazy" alt="Cachorro labrador chocolate en su primera revisión"></div>
+          <h3>Cachorros</h3>
+          <p>Primeros controles y consejos para empezar bien.</p>
+          <a href="#cita" class="mas">Conocer más</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PLANES ============ -->
+    <section class="wrap seccion" id="planes">
+      <h2>Planes de cuidado</h2>
+      <p class="sub">Elige el que mejor se adapte a la etapa de tu mascota.</p>
+      <div class="planes">
+        <article class="plan reveal">
+          <h3>Cachorros</h3>
+          <p class="precio">S/ 120 <span>/ mes</span></p>
+          <ul>
+            <li>Primera consulta</li>
+            <li>Vacunas básicas</li>
+            <li>Desparasitación</li>
+          </ul>
+          <a href="#cita" class="btn btn--teal btn--ancho">Elegir plan</a>
+        </article>
+        <article class="plan plan--dest reveal">
+          <h3>Adultos</h3>
+          <p class="precio">S/ 150 <span>/ mes</span></p>
+          <ul>
+            <li>Dos controles al año</li>
+            <li>Vacunas al día</li>
+            <li>Baño mensual</li>
+          </ul>
+          <a href="#cita" class="btn btn--teal btn--ancho">Elegir plan</a>
+        </article>
+        <article class="plan reveal">
+          <h3>Senior</h3>
+          <p class="precio">S/ 180 <span>/ mes</span></p>
+          <ul>
+            <li>Chequeo completo</li>
+            <li>Análisis de sangre</li>
+            <li>Atención prioritaria</li>
+          </ul>
+          <a href="#cita" class="btn btn--teal btn--ancho">Elegir plan</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS FRECUENTES ============ -->
+    <section class="wrap seccion" id="preguntas">
+      <h2>Preguntas frecuentes</h2>
+      <div class="faq">
+        <details class="faq__it reveal" open>
+          <summary>¿Necesito cita previa?</summary>
+          <p>Recomendamos agendar, pero atendemos emergencias sin cita las 24 horas.</p>
+        </details>
+        <details class="faq__it reveal" open>
+          <summary>¿Atienden otras mascotas además de perros y gatos?</summary>
+          <p>Sí, también conejos, hámsters y aves. Consúltanos primero.</p>
+        </details>
+        <details class="faq__it reveal" open>
+          <summary>¿Cuánto dura una consulta?</summary>
+          <p>Entre 30 y 45 minutos, con tiempo para resolver tus dudas.</p>
+        </details>
+        <details class="faq__it reveal" open>
+          <summary>¿Puedo pagar con tarjeta?</summary>
+          <p>Sí, aceptamos tarjetas, transferencias y billeteras digitales.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="wrap seccion equipo" id="nosotros">
+      <div class="equipo__txt">
+        <span class="etq">Nuestro equipo</span>
+        <h2>Médicos que cuidan con cariño</h2>
+        <p>Somos un equipo de veterinarios que ama lo que hace. Atendemos a cada mascota con paciencia, te explicamos todo con claridad y te acompañamos en cada etapa de su vida.</p>
+        <div class="stats">
+          <div class="stat"><b>4.9</b><span>Calificación</span></div>
+          <div class="stat"><b>5 mil+</b><span>Mascotas atendidas</span></div>
+          <div class="stat"><b>12</b><span>Años de experiencia</span></div>
+        </div>
+        <a href="#cita" class="btn btn--negro btn--sm">Conocer al equipo</a>
+      </div>
+      <figure class="equipo__foto reveal">
+        <img src="img/equipo.webp" width="900" height="1125" loading="lazy" alt="Veterinaria examinando a un beagle con estetoscopio">
+        <figcaption><b>Dra. Valeria Torres</b><span>Directora médica</span></figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ EMERGENCIAS ============ -->
+    <section class="wrap" id="emergencias">
+      <div class="emerg reveal">
+        <div>
+          <span class="etq">Emergencias · 24 horas</span>
+          <h2>¿Tu mascota necesita ayuda ahora?</h2>
+        </div>
+        <div class="emerg__der">
+          <div>
+            <small>Llámanos</small>
+            <a href="tel:+51900000000" class="emerg__tel">+51 900 000 000</a>
+          </div>
+          <a href="tel:+51900000000" class="btn btn--teal btn--sm">Llamar ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PRIMERA VISITA ============ -->
+    <section class="wrap seccion" id="visita">
+      <h2>Tu primera visita, paso a paso</h2>
+      <p class="sub">Así te acompañamos desde que llegas hasta que se va tranquila.</p>
+      <ol class="pasos">
+        <li class="reveal"><i>1</i><h3>Recepción</h3><p>Registramos a tu mascota y tomamos sus datos.</p></li>
+        <li class="reveal"><i>2</i><h3>Revisión</h3><p>Control de peso, temperatura y revisión completa.</p></li>
+        <li class="reveal"><i>3</i><h3>Diagnóstico</h3><p>Te explicamos todo con claridad y sin prisa.</p></li>
+        <li class="reveal"><i>4</i><h3>Plan de cuidado</h3><p>Recibes indicaciones y fecha de tu siguiente control.</p></li>
+      </ol>
+    </section>
+
+    <!-- ============ TESTIMONIO ============ -->
+    <section class="wrap">
+      <div class="testi reveal">
+        <div class="testi__izq">
+          <svg class="testi__comillas" viewBox="0 0 48 40" aria-hidden="true"><path d="M0 40V22C0 9 7 2 20 0v8C13 10 11 14 11 18h9v22H0zm26 0V22C26 9 33 2 46 0v8c-7 2-9 6-9 10h9v22H26z" fill="currentColor"/></svg>
+          <blockquote>Llegamos muy asustados con nuestra perrita y salimos tranquilos. Nos explicaron todo con calma y la trataron con muchísimo cariño. Ya es nuestra veterinaria de confianza.</blockquote>
+          <div class="autor"><i>AR</i><div><b>Andrea Ramírez</b><span>Dueña de Luna, golden retriever</span></div></div>
+        </div>
+        <div class="testi__der">
+          <b>4.9</b>
+          <span class="estrellas" aria-label="5 estrellas">★★★★★</span>
+          <small>más de 2 300 reseñas</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CITA ============ -->
+    <section class="wrap seccion cita" id="cita">
+      <div class="cita__txt">
+        <h2>Agenda la cita de tu mascota</h2>
+        <p class="sub">Completa el formulario y te confirmamos por WhatsApp en menos de una hora.</p>
+        <dl class="datos">
+          <div><dt>Dirección</dt><dd>Av. Principal 123, Miraflores</dd></div>
+          <div><dt>Horario</dt><dd>Lunes a sábado, 8 a. m. a 8 p. m.</dd></div>
+          <div><dt>Emergencias</dt><dd>Las 24 horas, todos los días</dd></div>
+        </dl>
+      </div>
+      <form class="form reveal" id="form-cita" novalidate>
+        <label class="campo"><span class="sr">Tu nombre</span><input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name"></label>
+        <label class="campo"><span class="sr">Nombre de tu mascota</span><input type="text" name="mascota" placeholder="Nombre de tu mascota"></label>
+        <div class="chips" role="radiogroup" aria-label="Tipo de mascota">
+          <label><input type="radio" name="tipo" value="Perro" checked><span>Perro</span></label>
+          <label><input type="radio" name="tipo" value="Gato"><span>Gato</span></label>
+          <label><input type="radio" name="tipo" value="Otro"><span>Otro</span></label>
+        </div>
+        <label class="campo"><span class="sr">Fecha y hora preferida</span><input type="text" name="fecha" placeholder="Fecha y hora preferida"></label>
+        <button type="submit" class="btn btn--teal btn--ancho">Reservar cita</button>
+        <p class="form__ok" id="form-ok" role="status" hidden>¡Gracias! Esta es una página de demostración: no se envió ninguna cita.</p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ============ PIE ============ -->
+  <footer class="pie">
+    <div class="wrap pie__in">
+      <div class="pie__marca">
+        <a href="#inicio" class="logo logo--blanco">PetSana</a>
+        <p>Veterinaria para perros y gatos, con atención de confianza.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <a href="#servicios">Consulta general</a>
+        <a href="#servicios">Vacunación</a>
+        <a href="#servicios">Baño y peluquería</a>
+        <a href="#servicios">Cachorros</a>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a href="mailto:hola@petsana.pe">hola@petsana.pe</a>
+        <a href="tel:+51900000000">+51 900 000 000</a>
+        <span>Emergencias 24 horas</span>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <a href="#inicio">Instagram</a>
+        <a href="#inicio">Facebook</a>
+        <a href="#inicio">WhatsApp</a>
+      </div>
+    </div>
+    <div class="pie__base"><div class="wrap"><p>© 2026 PetSana. Todos los derechos reservados.</p></div></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
