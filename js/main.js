@@ -28,6 +28,21 @@
     items.forEach(function (el) { el.classList.add('visto'); });
   }
 
+  // Botones que en una página real abrirían otra cosa: avisan que esto es una demostración
+  var aviso = document.getElementById('aviso'), avisoTxt = document.getElementById('aviso-txt'), avisoX = document.getElementById('aviso-x'), t = 0;
+  function mostrarAviso(frase) {
+    avisoTxt.textContent = 'Esto es una demostración: en tu página real, ' + frase;
+    aviso.hidden = false;
+    clearTimeout(t); t = setTimeout(function () { aviso.hidden = true; }, 5500);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('[data-demo]') : null;
+    if (!a) return;
+    e.preventDefault();
+    mostrarAviso(a.getAttribute('data-demo'));
+  });
+  avisoX.addEventListener('click', function () { aviso.hidden = true; clearTimeout(t); });
+
   // Formulario: es una demostración, no se envía a ningún lado
   var form = document.getElementById('form-cita'), ok = document.getElementById('form-ok');
   form.addEventListener('submit', function (e) {

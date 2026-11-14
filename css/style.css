@@ -237,3 +237,13 @@ h3 { font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
   .hero__img { animation: none; }
   * { transition-duration: .01ms !important; }
 }
+
+/* ---- ancla del formulario y aviso de demostración ---- */
+.ancla { display: block; height: 0; scroll-margin-top: 96px; }
+.aviso { position: fixed; left: 50%; bottom: 24px; z-index: 40; transform: translate(-50%, 16px); width: min(480px, calc(100% - 32px)); display: flex; align-items: center; gap: 12px; background: var(--negro); color: #fff; border-radius: 18px; padding: 14px 16px 14px 14px; box-shadow: 0 22px 44px -18px rgba(0, 0, 0, .55); opacity: 0; transition: opacity .25s ease, transform .25s ease; }
+.aviso:not([hidden]) { opacity: 1; transform: translate(-50%, 0); }
+.aviso[hidden] { display: none; }
+.aviso__demo { flex: none; background: var(--teal); color: #fff; font: 700 11px/1 var(--fuente-t); letter-spacing: .08em; text-transform: uppercase; padding: 7px 10px; border-radius: 99px; }
+.aviso p { flex: 1; font-size: 13.5px; line-height: 1.4; }
+.aviso__x { flex: none; width: 30px; height: 30px; border: 0; border-radius: 50%; background: rgba(255, 255, 255, .14); color: #fff; font-size: 18px; line-height: 1; cursor: pointer; }
+.aviso__x:hover { background: rgba(255, 255, 255, .26); }

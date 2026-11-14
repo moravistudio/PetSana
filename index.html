@@ -28,7 +28,7 @@
         <a href="#cita" class="nav__cta nav__cta--movil">Agendar cita</a>
       </nav>
       <div class="nav__der">
-        <a href="tel:+51900000000" class="nav__urg">Emergencias 24 h</a>
+        <a href="tel:+51900000000" class="nav__urg" data-demo="este botón llamaría directo al teléfono de emergencias de tu negocio.">Emergencias 24 h</a>
         <a href="#cita" class="btn btn--teal btn--sm nav__cta--pc">Agendar cita</a>
         <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
       </div>
@@ -61,32 +61,32 @@
           <h2>Nuestros servicios</h2>
           <p class="sub">Todo lo que tu mascota necesita, en un solo lugar.</p>
         </div>
-        <a href="#cita" class="btn btn--negro btn--sm">Ver todos</a>
+        <a href="#servicios" class="btn btn--negro btn--sm" data-demo="aquí verían la lista completa de tus servicios.">Ver todos</a>
       </div>
       <div class="servicios">
         <article class="serv reveal">
           <div class="serv__foto"><img src="img/servicio-consulta.webp" width="640" height="720" loading="lazy" alt="Veterinario revisando el oído de un labrador"></div>
           <h3>Consulta general</h3>
           <p>Revisión completa y orientación para su cuidado diario.</p>
-          <a href="#cita" class="mas">Conocer más</a>
+          <a href="#servicios" class="mas" data-demo="aquí se abriría el detalle de este servicio.">Conocer más</a>
         </article>
         <article class="serv reveal">
           <div class="serv__foto"><img src="img/servicio-vacunacion.webp" width="640" height="720" loading="lazy" alt="Veterinaria vacunando a un gato atigrado"></div>
           <h3>Vacunación</h3>
           <p>Calendario de vacunas al día, desde cachorros.</p>
-          <a href="#cita" class="mas">Conocer más</a>
+          <a href="#servicios" class="mas" data-demo="aquí se abriría el detalle de este servicio.">Conocer más</a>
         </article>
         <article class="serv reveal">
           <div class="serv__foto"><img src="img/servicio-bano.webp" width="640" height="720" loading="lazy" alt="Perrito rizado recibiendo su baño"></div>
           <h3>Baño y peluquería</h3>
           <p>Higiene y estilo con productos suaves para su piel.</p>
-          <a href="#cita" class="mas">Conocer más</a>
+          <a href="#servicios" class="mas" data-demo="aquí se abriría el detalle de este servicio.">Conocer más</a>
         </article>
         <article class="serv reveal">
           <div class="serv__foto"><img src="img/servicio-cachorros.webp" width="640" height="720" loading="lazy" alt="Cachorro labrador chocolate en su primera revisión"></div>
           <h3>Cachorros</h3>
           <p>Primeros controles y consejos para empezar bien.</p>
-          <a href="#cita" class="mas">Conocer más</a>
+          <a href="#servicios" class="mas" data-demo="aquí se abriría el detalle de este servicio.">Conocer más</a>
         </article>
       </div>
     </section>
@@ -163,7 +163,7 @@
           <div class="stat"><b>5 mil+</b><span>Mascotas atendidas</span></div>
           <div class="stat"><b>12</b><span>Años de experiencia</span></div>
         </div>
-        <a href="#cita" class="btn btn--negro btn--sm">Conocer al equipo</a>
+        <a href="#nosotros" class="btn btn--negro btn--sm" data-demo="aquí conocerían a tu equipo completo.">Conocer al equipo</a>
       </div>
       <figure class="equipo__foto reveal">
         <img src="img/equipo.webp" width="900" height="1125" loading="lazy" alt="Veterinaria examinando a un beagle con estetoscopio">
@@ -181,9 +181,9 @@
         <div class="emerg__der">
           <div>
             <small>Llámanos</small>
-            <a href="tel:+51900000000" class="emerg__tel">+51 900 000 000</a>
+            <a href="tel:+51900000000" class="emerg__tel" data-demo="este número sería el de emergencias de tu negocio y llamaría directo.">+51 900 000 000</a>
           </div>
-          <a href="tel:+51900000000" class="btn btn--teal btn--sm">Llamar ahora</a>
+          <a href="tel:+51900000000" class="btn btn--teal btn--sm" data-demo="este botón llamaría directo al teléfono de emergencias de tu negocio.">Llamar ahora</a>
         </div>
       </div>
     </section>
@@ -217,7 +217,7 @@
     </section>
 
     <!-- ============ CITA ============ -->
-    <section class="wrap seccion cita" id="cita">
+    <section class="wrap seccion cita" id="contacto">
       <div class="cita__txt">
         <h2>Agenda la cita de tu mascota</h2>
         <p class="sub">Completa el formulario y te confirmamos por WhatsApp en menos de una hora.</p>
@@ -228,6 +228,7 @@
         </dl>
       </div>
       <form class="form reveal" id="form-cita" novalidate>
+        <span id="cita" class="ancla"></span>
         <label class="campo"><span class="sr">Tu nombre</span><input type="text" name="nombre" placeholder="Tu nombre" autocomplete="name"></label>
         <label class="campo"><span class="sr">Nombre de tu mascota</span><input type="text" name="mascota" placeholder="Nombre de tu mascota"></label>
         <div class="chips" role="radiogroup" aria-label="Tipo de mascota">
@@ -259,19 +260,25 @@
       </div>
       <div>
         <h4>Contacto</h4>
-        <a href="mailto:hola@petsana.pe">hola@petsana.pe</a>
-        <a href="tel:+51900000000">+51 900 000 000</a>
+        <a href="mailto:hola@petsana.pe" data-demo="aquí iría el correo real de tu negocio.">hola@petsana.pe</a>
+        <a href="tel:+51900000000" data-demo="aquí iría el teléfono real de tu negocio.">+51 900 000 000</a>
         <span>Emergencias 24 horas</span>
       </div>
       <div>
         <h4>Síguenos</h4>
-        <a href="#inicio">Instagram</a>
-        <a href="#inicio">Facebook</a>
-        <a href="#inicio">WhatsApp</a>
+        <a href="#inicio" data-demo="aquí iría el enlace a tu Instagram.">Instagram</a>
+        <a href="#inicio" data-demo="aquí iría el enlace a tu Facebook.">Facebook</a>
+        <a href="#inicio" data-demo="aquí iría el enlace a tu WhatsApp.">WhatsApp</a>
       </div>
     </div>
     <div class="pie__base"><div class="wrap"><p>© 2026 PetSana. Todos los derechos reservados.</p></div></div>
   </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite" hidden>
+    <span class="aviso__demo">Demo</span>
+    <p id="aviso-txt"></p>
+    <button type="button" class="aviso__x" id="aviso-x" aria-label="Cerrar aviso">×</button>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
